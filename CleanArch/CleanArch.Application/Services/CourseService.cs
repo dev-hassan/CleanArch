@@ -7,7 +7,7 @@ using CleanArch.Domain.Interfaces;
 
 namespace CleanArch.Application.Services
 {
-    class CourseService : ICourseService
+    public class CourseService : ICourseService
     {
         private readonly ICourseRepository _courseRepository;
 

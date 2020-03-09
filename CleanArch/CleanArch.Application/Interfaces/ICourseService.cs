@@ -5,7 +5,7 @@ using CleanArch.Application.ViewModels;
 
 namespace CleanArch.Application.Interfaces
 {
-    interface ICourseService
+    public interface ICourseService
     {
         CourseViewModel GetCourses();
     }
