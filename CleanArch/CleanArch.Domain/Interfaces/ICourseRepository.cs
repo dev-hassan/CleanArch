@@ -5,7 +5,7 @@ using CleanArch.Domain.Models;
 
 namespace CleanArch.Domain.Interfaces
 {
-    interface ICourseRepository
+    public interface ICourseRepository
     {
         IEnumerable<Course> GetCourses();
     }
