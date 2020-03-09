@@ -7,7 +7,7 @@ using CleanArch.Infra.Data.Context;
 
 namespace CleanArch.Infra.Data.Repository
 {
-    class CourseRepository : ICourseRepository
+    public class CourseRepository : ICourseRepository
     {
         private readonly UniversityDBContext _ctx;
 

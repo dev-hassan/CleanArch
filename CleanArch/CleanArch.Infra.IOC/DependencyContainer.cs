@@ -4,6 +4,7 @@ using System.Text;
 using CleanArch.Application.Interfaces;
 using CleanArch.Application.Services;
 using CleanArch.Domain.Interfaces;
+using CleanArch.Infra.Data.Repository;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CleanArch.Infra.IOC
@@ -13,7 +14,7 @@ namespace CleanArch.Infra.IOC
         public static void RegisterServices(IServiceCollection services)
         {
             services.AddScoped<ICourseService, CourseService>();
-            services.AddScoped<ICourseRepository, ICourseRepository>();
+            services.AddScoped<ICourseRepository, CourseRepository>();
         }
     }
 }
