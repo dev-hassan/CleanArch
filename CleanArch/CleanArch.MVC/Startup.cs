@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.IOC;
+using CleanArch.MVC.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -44,6 +45,9 @@ namespace CleanArch.MVC
             services.AddRazorPages();
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
+
             RegisterServices(services);
         }
 

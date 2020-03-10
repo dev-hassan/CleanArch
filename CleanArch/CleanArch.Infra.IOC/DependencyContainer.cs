@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using AutoMapper;
 using CleanArch.Application.Interfaces;
 using CleanArch.Application.Services;
 using CleanArch.Domain.CommandHandlers;
